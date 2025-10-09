@@ -1,19 +1,85 @@
 .header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+}
 
+.header__menu {
+  width: 391.48px;
+  height: 22px;
+  /* посмотреть лоты */
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.header__link-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+
+.header__links-list-item {
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: underline 1px solid;
+  text-underline-offset: 4px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header__logo-image {
+  padding: 1.16px 9.86px 0.81px 9.03px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 135% */
+  max-width: 240px;
+  justify-self: end;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 24px;
+  /* +9 999 555 5555 */
+  text-decoration: none;
+}
+
+.header__address__with-decoration {
+  text-decoration: underline 1px solid;
+  text-underline-offset: 4px;
 }
 
 .cover {
-
 }
 
 .lots {
-
 }
 
 .about {
-
 }
 
 .footer {
-    
 }
