@@ -40,7 +40,7 @@
 
 .header__logo {
   display: block;
-  width: 148px;
+  width: 155px;
   height: 105px;
 }
 
@@ -72,7 +72,86 @@
   text-underline-offset: 4px;
 }
 
+.overlay {
+  min-height: 757px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
 .cover {
+  color: white;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 757px;
+}
+
+.cover__text-elements {
+  position: relative;
+  z-index: 1;
+}
+
+.text-transform__uppercase {
+  text-transform: uppercase;
+}
+
+.cover__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  margin-right: -0.3em; 
+  /* margin-right - так по-кривому "убрала" (или точнее компенсировала)))) 
+  пробел, образовавшийся у последней буквы 
+  из-за свойства letter-spacing */
+  padding: 156px 50px 0px 50px;
+  line-height: 135px;
+}
+
+.without-text-height {
+  
+}
+
+.aligned-text_left {
+  display: block;
+  text-align: left;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align-last: end;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 96px 50px 0px 50px;
+}
+
+.cover__description-text {
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  color: white;
+  border: thin solid white;
+  background-color: transparent;
 }
 
 .lots {
