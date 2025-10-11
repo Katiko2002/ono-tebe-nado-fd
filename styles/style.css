@@ -73,10 +73,11 @@
 }
 
 .overlay {
-  min-height: 757px;
+  min-height: 100px;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   width: 100%;
+  height: 100%;
   z-index: 0;
 }
 
@@ -103,16 +104,12 @@
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
-  margin-right: -0.3em; 
+  margin-right: -0.3em;
   /* margin-right - так по-кривому "убрала" (или точнее компенсировала)))) 
   пробел, образовавшийся у последней буквы 
   из-за свойства letter-spacing */
   padding: 156px 50px 0px 50px;
   line-height: 135px;
-}
-
-.without-text-height {
-  
 }
 
 .aligned-text_left {
@@ -155,6 +152,102 @@
 }
 
 .lots {
+  padding: 180px 24px 0px 24px;
+  margin-bottom: 120px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  padding-left: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.lots__card-list {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+}
+
+.card__text-elements {
+  position: relative;
+  z-index: 1;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__title {
+  text-transform: uppercase;
+  text-decoration: underline 1px solid;
+  text-underline-offset: 3.6px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+}
+
+.card__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.lots__look-more-link {
+  padding-left: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  text-decoration: underline 1px solid;
+    text-underline-offset: 3.6px;
+
+
 }
 
 .about {
