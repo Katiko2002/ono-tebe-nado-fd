@@ -245,12 +245,69 @@
   line-height: 23px;
   color: #000000;
   text-decoration: underline 1px solid;
-    text-underline-offset: 3.6px;
+  text-underline-offset: 3.6px;
+}
+
+.about {
+  margin: 0px 24px 180px;
+}
+
+.about__column {
+  display: grid;
+  gap: 25px;
+
+  grid-template-columns: 334px auto;
+  width: 100%;
+}
+
+.about__logo {
+  display:flex;
+  justify-content: center;
+  padding-top: 35px; 
+}
+
+.about__logo-background {
+
+  height: 240px;
+  width: 240px;
+  background-color: black;
+  border-radius: 120px;
+}
+
+.about__logo-image {
+  padding: 64px 45.52px 62px 46.48px;
+
+}
+
+.about__text {
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+padding-top: 136px;
+/* Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями? */
+}
+
+.about__title {
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 100px;
 
 
 }
 
-.about {
+
+
+.about__paragraphs {
+  padding-right: 5px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .footer {
