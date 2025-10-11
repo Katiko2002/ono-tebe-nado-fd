@@ -304,10 +304,15 @@ margin-bottom: 100px;
 
 
 .about__paragraphs {
-  padding-right: 5px;
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  
+ 
+}
+
+.about__paragraphs-text {
+  white-space: pre-line;
 }
 
 .footer {
