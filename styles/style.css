@@ -1,3 +1,8 @@
+body {
+  font-style: normal;
+  font-weight: 400px;;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -6,8 +11,6 @@
 }
 
 .header__menu {
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 100%;
 }
@@ -43,7 +46,6 @@
 
 .address {
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   width: 240px;
@@ -53,7 +55,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: 24px;
   text-decoration: none;
   justify-self: end;
 }
@@ -62,7 +63,7 @@
   list-style: none;
 }
 
-.address__with-decoration {
+.address__with-underline {
   text-decoration: underline 1px solid;
   text-underline-offset: 4px;
 }
@@ -82,7 +83,8 @@
   background-position: center;
   position: relative;
   min-height: 757px;
-  margin-bottom: 180px; 
+  margin-bottom: 180px;
+  text-transform: uppercase;
 }
 
 .cover__text-elements {
@@ -90,12 +92,7 @@
   z-index: 1;
 }
 
-.text-transform__uppercase {
-  text-transform: uppercase;
-}
-
 .cover__title {
-  font-style: normal;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
@@ -126,8 +123,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 28px;
   padding: 96px 50px 0px 50px;
@@ -143,6 +138,7 @@
   color: white;
   border: thin solid white;
   background-color: transparent;
+  text-transform: uppercase;
 }
 
 .lots {
@@ -153,7 +149,6 @@
 .lots__heading {
   margin-bottom: 27px;
   padding-left: 40px;
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -166,8 +161,6 @@
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #ffffff;
@@ -222,8 +215,6 @@
 }
 
 .card__text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #ffffff;
@@ -231,8 +222,6 @@
 
 .lots__look-more-link {
   padding-left: 40px;
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   color: #000000;
@@ -255,7 +244,6 @@
 .about__logo {
   display: flex;
   justify-content: center;
-  
 }
 
 .about__logo-background {
@@ -272,18 +260,13 @@
 .about__text {
   display: grid;
   grid-template-rows: 248px auto;
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  
 }
 
 .about__title {
-    align-self: center;
-
-  font-style: normal;
+  align-self: center;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -310,8 +293,6 @@
 }
 
 .footer__menu {
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -341,4 +322,9 @@
 
 .footer__social-list-item {
   width: 48px;
+}
+
+.footer__social-list-icon {
+  width: 48px;
+  height: 48px;
 }
