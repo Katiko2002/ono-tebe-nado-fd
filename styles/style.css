@@ -64,12 +64,14 @@ body {
   text-underline-offset: 4px;
 }
 
-.overlay {
-  width: 100%;
-  min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+.overlay::before {
+  content: "";
   position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 0 0 / 0.6);
   z-index: 0;
+
 }
 
 .cover {
