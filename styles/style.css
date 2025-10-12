@@ -98,11 +98,7 @@ body {
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
-  margin-right: -0.3em;
-  /* margin-right - так по-кривому "убрала" (или точнее компенсировала)))) 
-  пробел, образовавшийся у последней буквы 
-  из-за свойства letter-spacing */
-  padding: 156px 50px 0px 50px;
+  padding: 156px 20px 0px 50px;
   line-height: 135px;
 }
 
